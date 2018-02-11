@@ -77,7 +77,6 @@ input_size = 255
 inputs = tf.placeholder(tf.float32, [None, input_size, input_size, c_dim], name='inputs')
 
 # ------ Set the weight of three conv layers
-# replace '0' with your hyper parameter numbers
 # conv1 layer with biases: 64 filters with size 9 x 9
 # conv2 layer with biases and relu: 32 filters with size 1 x 1
 # conv3 layer with biases and NO relu: 1 filter with size 5 x 5
@@ -98,7 +97,6 @@ image = tf.cast(np.asarray(preprocess(path)), tf.float32)
 # Define the model layers with three convolutional layers
 
 # ------ Compute feature maps of input low-resolution images
-# replace 'None' with your layers: use the tf.nn.conv2d() and tf.nn.relu()
 # conv1 layer with biases and relu : 64 filters with size 9 x 9
 conv1 = tf.nn.relu(tf.nn.conv2d(inputs, filter=weights['w1'], strides=[1, 1, 1, 1], padding='SAME', name='conv1') + biases['b1'])
 # ------ Compute non-linear mapping
