@@ -5,5 +5,5 @@ This repository contains a Python implemenation of Dong, Loy, He and Tang's 'Sup
 
 The output of the SRCNN is a higher resolution image than the blurred image. Examples of a blurred image and outputs of the SRCNN are available in the images folder.
 
-The original MATLAB implementation by Dong et al. can be found here: http://mmlab.ie.cuhk.edu.hk/projects/SRCNN.html <br />
+The original MATLAB implementation by Dong et al.: http://mmlab.ie.cuhk.edu.hk/projects/SRCNN.html <br />
 Their paper can be found here: https://arxiv.org/pdf/1501.00092.pdf
